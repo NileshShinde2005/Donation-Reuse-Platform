@@ -98,7 +98,7 @@ function Register() {
       // -------------------------
 
       const response = await fetch(
-        "http://localhost:8080/api/users/register",
+        "https://donation-reuse-platform.onrender.com/api/users/register",
         {
           method: "POST",
           headers: {

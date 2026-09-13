@@ -12,7 +12,7 @@ const Browse = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/donations")
+    fetch("https://donation-reuse-platform.onrender.com/api/donations")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch donations");

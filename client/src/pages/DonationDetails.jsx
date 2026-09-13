@@ -52,7 +52,7 @@ function DonationDetails() {
     const fetchDonation = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8080/api/donations/${id}`
+          `https://donation-reuse-platform.onrender.com/api/donations/${id}`
         );
 
         if (!response.ok) {
@@ -105,7 +105,7 @@ function DonationDetails() {
         try {
 
           const response = await fetch(
-            `http://localhost:8080/api/requests/user/${encodeURIComponent(
+            `https://donation-reuse-platform.onrender.com/api/requests/user/${encodeURIComponent(
               user.email
             )}`
           );
@@ -363,7 +363,7 @@ function DonationDetails() {
 
       const response =
         await fetch(
-          "http://localhost:8080/api/requests",
+          "https://donation-reuse-platform.onrender.com/api/requests",
           {
             method: "POST",
 

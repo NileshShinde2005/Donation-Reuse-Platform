@@ -192,7 +192,7 @@ const Donate = () => {
 
       const response =
         await fetch(
-          "http://localhost:8080/api/donations",
+          "https://donation-reuse-platform.onrender.com/api/donations",
           {
             method: "POST",
 

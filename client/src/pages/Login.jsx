@@ -76,7 +76,7 @@ function Login() {
 
       const backendResponse =
         await fetch(
-          "http://localhost:8080/api/users/google-login",
+          "https://donation-reuse-platform.onrender.com/api/users/google-login",
           {
             method: "POST",
 
@@ -327,7 +327,7 @@ function Login() {
 
       const response =
         await fetch(
-          "http://localhost:8080/api/users/login",
+          "https://donation-reuse-platform.onrender.com/api/users/login",
           {
             method: "POST",
 

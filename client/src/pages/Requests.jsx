@@ -34,13 +34,13 @@ function Requests() {
       const [myResponse, incomingResponse] =
         await Promise.all([
           fetch(
-            `http://localhost:8080/api/requests/user/${encodeURIComponent(
+            `https://donation-reuse-platform.onrender.com/api/requests/user/${encodeURIComponent(
               user.email
             )}`
           ),
 
           fetch(
-            `http://localhost:8080/api/requests/donor/${encodeURIComponent(
+            `https://donation-reuse-platform.onrender.com/api/requests/donor/${encodeURIComponent(
               user.email
             )}`
           ),
@@ -89,7 +89,7 @@ function Requests() {
   ) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/requests/${requestId}/status?status=${status}`,
+        `https://donation-reuse-platform.onrender.com/api/requests/${requestId}/status?status=${status}`,
         {
           method: "PUT",
         }

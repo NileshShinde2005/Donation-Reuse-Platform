@@ -74,7 +74,7 @@ function Profile() {
 
         const userResponse =
           await fetch(
-            `http://localhost:8080/api/users/${storedUser.id}`
+            `https://donation-reuse-platform.onrender.com/api/users/${storedUser.id}`
           );
 
         if (!userResponse.ok) {
@@ -100,7 +100,7 @@ function Profile() {
 
         const donationsResponse =
           await fetch(
-            "http://localhost:8080/api/donations"
+            "https://donation-reuse-platform.onrender.com/api/donations"
           );
 
         if (!donationsResponse.ok) {
@@ -250,7 +250,7 @@ function Profile() {
 
       const response =
         await fetch(
-          `http://localhost:8080/api/users/${user.id}`,
+          `https://donation-reuse-platform.onrender.com/api/users/${user.id}`,
           {
             method: "PUT",
 

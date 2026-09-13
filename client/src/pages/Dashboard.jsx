@@ -59,7 +59,7 @@ function Dashboard() {
 
         const donationsResponse =
           await fetch(
-            "http://localhost:8080/api/donations"
+            "https://donation-reuse-platform.onrender.com/api/donations"
           );
 
         if (!donationsResponse.ok) {
@@ -79,7 +79,7 @@ function Dashboard() {
 
         const myRequestsResponse =
           await fetch(
-            `http://localhost:8080/api/requests/user/${encodeURIComponent(
+            `https://donation-reuse-platform.onrender.com/api/requests/user/${encodeURIComponent(
               user.email
             )}`
           );
@@ -99,7 +99,7 @@ function Dashboard() {
 
         const incomingRequestsResponse =
           await fetch(
-            `http://localhost:8080/api/requests/donor/${encodeURIComponent(
+            `https://donation-reuse-platform.onrender.com/api/requests/donor/${encodeURIComponent(
               user.email
             )}`
           );
@@ -254,7 +254,7 @@ function Dashboard() {
 
       const response =
         await fetch(
-          `http://localhost:8080/api/requests/${requestId}/status?status=${encodeURIComponent(
+          `https://donation-reuse-platform.onrender.com/api/requests/${requestId}/status?status=${encodeURIComponent(
             newStatus
           )}`,
           {
