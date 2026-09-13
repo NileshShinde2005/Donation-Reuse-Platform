@@ -1,0 +1,194 @@
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  padding: 75px 7vw;
+  background: #ffffff;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.about-heading {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.about-heading h4 {
+  margin: 0 0 10px;
+
+  color: #2e7d32;
+
+  font-size: 14px;
+
+  letter-spacing: 2px;
+
+  font-weight: 800;
+}
+
+.about-heading h2 {
+  margin: 0 0 15px;
+
+  color: #17262e;
+
+  font-size: clamp(34px, 4vw, 46px);
+
+  line-height: 1.15;
+}
+
+.about-heading h2 span {
+  color: #2e7d32;
+}
+
+.about-heading p {
+  margin: 0;
+
+  max-width: 680px;
+
+  color: #68747c;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.about-features {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.feature-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 20px;
+
+  background: #f6fbf7;
+
+  border: 1px solid #e5eee6;
+
+  border-radius: 12px;
+
+  transition: 0.25s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.06);
+}
+
+
+/* ICON */
+
+.feature-icon {
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #e5f3e7;
+
+  color: #2e7d32;
+
+  font-size: 17px;
+}
+
+
+/* TEXT */
+
+.feature-box h3 {
+  margin: 0 0 4px;
+
+  color: #2e7d32;
+
+  font-size: 15px;
+}
+
+.feature-box p {
+  margin: 0;
+
+  color: #68747c;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+  .about {
+    padding: 65px 5vw;
+  }
+
+  .about-features {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .about {
+    padding: 55px 25px;
+  }
+
+  .about-heading {
+    margin-bottom: 30px;
+  }
+
+  .about-heading h2 {
+    font-size: 34px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .feature-box {
+    padding: 17px;
+  }
+
+}

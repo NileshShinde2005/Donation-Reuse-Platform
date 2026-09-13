@@ -1,0 +1,248 @@
+.donate-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.donate-container {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.donate-container h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.donate-container p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.donate-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-upload label {
+  font-weight: 600;
+  color: #333;
+}
+
+.image-upload input[type="file"] {
+  padding: 10px;
+  border: 2px dashed #4caf50;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f9fff9;
+}
+
+.preview {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+}
+
+.donate-container input,
+.donate-container select,
+.donate-container textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.donate-container input:focus,
+.donate-container select:focus,
+.donate-container textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
+.donate-container textarea {
+  resize: vertical;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox label {
+  font-weight: 500;
+  color: #444;
+}
+
+.donate-container button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #4caf50;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.donate-container button:hover {
+  background: #388e3c;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .donate-container {
+    padding: 25px;
+  }
+
+  .donate-container h1 {
+    font-size: 28px;
+  }
+}
+/* ==========================
+   PICKUP SECTION
+========================== */
+
+.pickup-section {
+  margin-top: 25px;
+  padding: 22px;
+
+  background: #f1f8f2;
+
+  border: 1px solid #c8e6c9;
+
+  border-radius: 12px;
+}
+
+.pickup-section h3 {
+  color: #2e7d32;
+  margin-bottom: 18px;
+}
+
+.pickup-section label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 7px;
+
+  font-weight: 600;
+  color: #444;
+}
+
+.pickup-section input,
+.pickup-section textarea {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  font-family: inherit;
+}
+
+.pickup-section input:focus,
+.pickup-section textarea:focus {
+  border-color: #2e7d32;
+}
+
+/* ==========================
+   SELECTED NGO
+========================== */
+
+.selected-ngo {
+  background: white;
+
+  border-left: 4px solid #2e7d32;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  margin-bottom: 15px;
+}
+
+.selected-ngo strong {
+  color: #2e7d32;
+}
+
+.selected-ngo p {
+  margin: 6px 0;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+.selected-ngo span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+/* ==========================
+   NO NGO
+========================== */
+
+.no-ngo {
+  background: #fff3e0;
+
+  border: 1px solid #ffcc80;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  margin-bottom: 15px;
+}
+
+.no-ngo p {
+  margin-bottom: 8px;
+
+  color: #795548;
+}
+
+.no-ngo a {
+  color: #2e7d32;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.no-ngo a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,813 @@
+/* ================================
+   MY DONATIONS PAGE
+================================ */
+
+.my-donations-page {
+    min-height: 100vh;
+    background: #f4fbf5;
+    padding: 60px 7%;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.my-donations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.my-donations-header h1 {
+    margin: 0;
+    color: #2e7d32;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.my-donations-header p {
+    margin-top: 8px;
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* Donation count */
+
+.donation-count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: white;
+    color: #2e7d32;
+
+    padding: 14px 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    font-weight: 600;
+}
+
+.donation-count svg {
+    font-size: 20px;
+}
+
+
+/* ================================
+   SEARCH
+================================ */
+
+.my-donations-search {
+    max-width: 600px;
+
+    margin-bottom: 40px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 13px 18px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.my-donations-search svg {
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+.my-donations-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+
+    color: #333;
+}
+
+.my-donations-search input::placeholder {
+    color: #999;
+}
+
+
+/* ================================
+   DONATION GRID
+================================ */
+
+.my-donations-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* ================================
+   DONATION CARD
+================================ */
+
+.my-donation-card {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.my-donation-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================
+   IMAGE
+================================ */
+
+.my-donation-image {
+    height: 230px;
+
+    position: relative;
+
+    background: #e8f5e9;
+
+    overflow: hidden;
+}
+
+.my-donation-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Condition */
+
+.condition-badge {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    background: white;
+
+    color: #2e7d32;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.my-donation-content {
+    padding: 22px;
+}
+
+.my-donation-content h2 {
+    margin: 0 0 10px;
+
+    font-size: 22px;
+
+    color: #333;
+}
+
+
+/* Category */
+
+.category-badge {
+    display: inline-block;
+
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+/* Location */
+
+.my-donation-content > p {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    margin: 8px 0;
+}
+
+.my-donation-content > p svg {
+    color: #2e7d32;
+}
+
+
+/* Description */
+
+.my-donation-content .donation-description {
+    display: block;
+
+    line-height: 1.6;
+
+    color: #777;
+
+    min-height: 45px;
+
+    margin-top: 12px;
+}
+
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.donation-actions {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.donation-actions button {
+    flex: 1;
+
+    border: none;
+
+    padding: 11px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 7px;
+
+    transition: 0.3s ease;
+}
+
+
+/* Edit */
+
+.edit-donation-btn {
+    background: #e8f5e9;
+
+    color: #2e7d32;
+}
+
+.edit-donation-btn:hover {
+    background: #c8e6c9;
+}
+
+
+/* Delete */
+
+.delete-donation-btn {
+    background: #ffebee;
+
+    color: #d32f2f;
+}
+
+.delete-donation-btn:hover {
+    background: #ffcdd2;
+}
+
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+.empty-donations {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.empty-donations svg {
+    font-size: 60px;
+
+    color: #81c784;
+
+    margin-bottom: 20px;
+}
+
+.empty-donations h2 {
+    color: #2e7d32;
+
+    margin-bottom: 10px;
+}
+
+.empty-donations p {
+    color: #777;
+
+    font-size: 16px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1100px) {
+
+    .my-donations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .my-donations-page {
+        padding: 40px 5%;
+    }
+
+    .my-donations-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .my-donations-header h1 {
+        font-size: 30px;
+    }
+
+    .my-donations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .my-donations-search {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .my-donation-image {
+        height: 200px;
+    }
+
+    .my-donation-content {
+        padding: 18px;
+    }
+
+    .donation-actions {
+        flex-direction: column;
+    }
+
+}
+/* ================================
+   EDIT MODAL
+================================ */
+
+.edit-modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    z-index: 2000;
+
+    overflow-y: auto;
+}
+
+
+/* Modal */
+
+.edit-modal {
+    width: 100%;
+    max-width: 650px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+    animation: editModalOpen 0.25s ease;
+}
+
+@keyframes editModalOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* Header */
+
+.edit-modal-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+.edit-modal-header h2 {
+    margin: 0;
+
+    color: #2e7d32;
+
+    font-size: 28px;
+}
+
+.edit-modal-header p {
+    margin-top: 5px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* Close button */
+
+.close-edit-btn {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f1f1;
+
+    color: #555;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.close-edit-btn:hover {
+    background: #ffebee;
+    color: #d32f2f;
+}
+
+
+/* Image */
+
+.edit-image-section {
+    margin-bottom: 20px;
+}
+
+.edit-preview {
+    width: 140px;
+    height: 110px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #ddd;
+}
+
+.edit-image-section label {
+    display: block;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 8px;
+}
+
+
+/* Form */
+
+.edit-form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+.edit-form-group label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #444;
+
+    margin-bottom: 7px;
+}
+
+.edit-form-group input,
+.edit-form-group select,
+.edit-form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d6d6d6;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    transition: 0.2s;
+}
+
+.edit-form-group textarea {
+    resize: vertical;
+}
+
+.edit-form-group input:focus,
+.edit-form-group select:focus,
+.edit-form-group textarea:focus {
+    border-color: #2e7d32;
+
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.08);
+}
+
+
+/* Two columns */
+
+.edit-form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* Pickup */
+
+.edit-pickup {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: #444;
+
+    font-size: 14px;
+}
+
+.edit-pickup input {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Modal buttons */
+
+.edit-modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    border-top: 1px solid #eee;
+
+    padding-top: 20px;
+}
+
+.edit-modal-actions button {
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 12px 20px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    transition: 0.3s;
+}
+
+
+/* Cancel */
+
+.cancel-edit-btn {
+    background: #f1f1f1;
+
+    color: #555;
+}
+
+.cancel-edit-btn:hover {
+    background: #e0e0e0;
+}
+
+
+/* Save */
+
+.save-edit-btn {
+    background: #2e7d32;
+
+    color: white;
+}
+
+.save-edit-btn:hover {
+    background: #256628;
+}
+
+
+/* ================================
+   MOBILE EDIT MODAL
+================================ */
+
+@media (max-width: 600px) {
+
+    .edit-modal-overlay {
+        padding: 15px;
+    }
+
+    .edit-modal {
+        padding: 22px;
+
+        max-height: 92vh;
+    }
+
+    .edit-modal-header h2 {
+        font-size: 23px;
+    }
+
+    .edit-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .edit-modal-actions {
+        flex-direction: column;
+    }
+
+    .edit-modal-actions button {
+        width: 100%;
+    }
+
+}
+
+.status-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-badge.available {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.requested {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.accepted {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-badge.scheduled {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.status-badge.collected {
+  background: #e0f2f1;
+  color: #00695c;
+}
+
+.status-badge.distributed {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.status-badge.rejected {
+  background: #ffebee;
+  color: #c62828;
+}

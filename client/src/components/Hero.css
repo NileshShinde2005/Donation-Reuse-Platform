@@ -1,0 +1,481 @@
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 70px;
+
+  padding: 60px 7vw 55px;
+
+  min-height: 500px;
+
+  background: linear-gradient(
+    to right,
+    #f8fcf8,
+    #eef8ef
+  );
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.hero-left {
+  width: 50%;
+  max-width: 600px;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 7px 13px;
+
+  margin-bottom: 18px;
+
+  background: #e2f4e4;
+
+  color: #2e7d32;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.hero-tag svg {
+  font-size: 13px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.hero-left h1 {
+  margin: 0 0 18px;
+
+  color: #17262e;
+
+  font-size: clamp(44px, 5vw, 64px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+.highlight {
+  display: block;
+
+  color: #2e7d32;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.hero-left p {
+  max-width: 530px;
+
+  margin: 0 0 25px;
+
+  color: #667279;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+}
+
+.donate-btn,
+.ngo-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-height: 44px;
+
+  padding: 0 21px;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.donate-btn {
+  background: #2e7d32;
+  color: white;
+}
+
+.donate-btn:hover {
+  background: #256728;
+  transform: translateY(-2px);
+}
+
+.ngo-btn {
+  background: white;
+
+  color: #2e7d32;
+
+  border: 1.5px solid #2e7d32;
+}
+
+.ngo-btn:hover {
+  background: #2e7d32;
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   TRUST POINTS
+========================= */
+
+.hero-features {
+  display: flex;
+  align-items: center;
+
+  color: #3f4942;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.hero-features div {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 0 14px;
+
+  border-right: 1px solid #d5ddd6;
+}
+
+.hero-features div:first-child {
+  padding-left: 0;
+}
+
+.hero-features div:last-child {
+  border-right: none;
+}
+
+.hero-features svg {
+  color: #2e7d32;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.hero-right {
+  width: 48%;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.hero-right img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 550px;
+
+  height: 365px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+  transition: 0.25s ease;
+}
+
+.hero-right img:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+  max-width: 1100px;
+
+  margin: -5px auto 25px;
+
+  padding: 12px 15px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  background: #f4faf5;
+
+  border-radius: 14px;
+
+  position: relative;
+
+  z-index: 2;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card {
+  min-height: 85px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  border-right: 1px solid #d7e2d9;
+}
+
+.stat-card:last-child {
+  border-right: none;
+}
+
+.stat-card .icon {
+  width: 36px;
+  height: 36px;
+
+  display: grid;
+
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #e3f3e5;
+
+  color: #2e7d32;
+
+  font-size: 15px;
+}
+
+.stat-card h2 {
+  margin: 0;
+
+  color: #18262e;
+
+  font-size: 24px;
+
+  line-height: 1;
+}
+
+.stat-card p {
+  margin: 4px 0 0;
+
+  color: #68747c;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    gap: 40px;
+
+    padding: 50px 5vw;
+  }
+
+  .hero-right img {
+    height: 320px;
+  }
+
+  .hero-features {
+    flex-wrap: wrap;
+
+    gap: 8px;
+  }
+
+  .hero-features div {
+    padding: 0 9px;
+  }
+
+  .stats {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .hero {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 35px;
+
+    padding: 45px 25px 50px;
+
+    min-height: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+
+    max-width: none;
+  }
+
+  .hero-left h1 {
+    font-size: 45px;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    margin-bottom: 22px;
+  }
+
+  .hero-right img {
+    max-width: none;
+
+    height: 300px;
+  }
+
+  .stats {
+    margin: 0 20px 20px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 8px;
+  }
+
+  .stat-card {
+    min-height: 85px;
+  }
+
+  .stat-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .stat-card:nth-child(-n + 2) {
+    border-bottom: 1px solid #d7e2d9;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .donate-btn,
+  .ngo-btn {
+    width: 100%;
+  }
+
+  .hero-features {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 9px;
+  }
+
+  .hero-features div,
+  .hero-features div:first-child {
+    padding: 0;
+
+    border: none;
+  }
+
+  .hero-right img {
+    height: 270px;
+
+    border-radius: 14px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-card {
+    gap: 8px;
+  }
+
+  .stat-card .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .stat-card h2 {
+    font-size: 20px;
+  }
+
+  .stat-card p {
+    font-size: 11px;
+  }
+
+}

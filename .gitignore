@@ -1,0 +1,22 @@
+# Node
+client/node_modules/
+client/dist/
+
+# Environment variables
+client/.env
+server/.env
+
+# Java / Spring Boot
+server/target/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend configuration with database credentials
+server/src/main/resources/application.properties
